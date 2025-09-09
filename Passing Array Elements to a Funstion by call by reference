@@ -1,0 +1,13 @@
+/* Demonstration of call by reference */
+#include <stdio.h>
+int main()
+{
+  int i;
+  int marks[] = {55,65,78,78,96,75,90}
+  for (i=0; i<=6; i++)
+    disp(&marks[i]);
+}
+disp(int *n)
+{
+  printf("\n%d", *n);
+}
